@@ -56,6 +56,9 @@ public  static ChessPosition readChessPosition(Scanner sc){
         System.out.println();
         System.out.println("Turn : " + chessmatch.getTurn());
         System.out.println("Waiting player: " + chessmatch.getCurrentPlayer());
+        if (chessmatch.getCheck()){
+            System.out.println("Check");
+        }
     }
 
     public static void printBoard(ChessPiece[][] pieces){
