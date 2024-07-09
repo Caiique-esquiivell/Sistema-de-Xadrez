@@ -6,7 +6,10 @@ import bordgame.Position;
 import chess.pices.King;
 import chess.pices.Rook;
 import chess.pices.Pawn;
-import  chess.pices.Bishop;
+import chess.pices.Bishop;
+import chess.pices.Knight;
+import chess.pices.Queen;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -191,14 +194,14 @@ public class chessMatch {
     }
 
     private  void initialSetup(){
-        placeNewPiece('a', 7, new Rook(board, Color.WHITE));
+        placeNewPiece('a',1 , new Rook(board, Color.WHITE));
         placeNewPiece('b', 1, new Knight(board, Color.WHITE));
         placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
         placeNewPiece('d', 1, new Queen(board, Color.WHITE));
         placeNewPiece('e', 1, new King(board, Color.WHITE));
         placeNewPiece('f', 1, new Bishop(board, Color.WHITE));
         placeNewPiece('g', 1, new Knight(board, Color.WHITE));
-        placeNewPiece('d', 1, new Rook(board, Color.WHITE));
+        placeNewPiece('h', 1, new Rook(board, Color.WHITE));
         placeNewPiece('a', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('b', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('c', 2, new Pawn(board, Color.WHITE));
