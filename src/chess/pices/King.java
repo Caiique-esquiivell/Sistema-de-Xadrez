@@ -4,7 +4,7 @@ import bordgame.Board;
 import bordgame.Position;
 import chess.ChessPiece;
 import chess.Color;
-import chess.chessMatch
+import chess.chessMatch;
 
 public class King extends ChessPiece {
 
