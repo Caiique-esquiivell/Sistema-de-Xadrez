@@ -1,9 +1,10 @@
 package application;
 
+import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 import chess.Color;
-import  chess.chessMatch;
+import  chess.ChessMatch;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;
@@ -49,7 +50,7 @@ public  static ChessPosition readChessPosition(Scanner sc){
     }
 }
 
-    public static void printMatc(chessMatch chessmatch,List<ChessPiece> captured){
+    public static void printMatch(ChessMatch chessmatch, List<ChessPiece> captured){
         printBoard(chessmatch.getPieces());
         System.out.println();
         printCapturedPieces(captured);

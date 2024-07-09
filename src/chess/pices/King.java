@@ -2,15 +2,16 @@ package chess.pices;
 
 import bordgame.Board;
 import bordgame.Position;
+import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.Color;
-import chess.chessMatch;
+
 
 public class King extends ChessPiece {
 
-    private  chessMatch chessMatch;
+    private ChessMatch chessMatch;
 
-    public King(Board board, Color color, chessMatch chessMatch) {
+    public King(Board board, Color color, ChessMatch chessMatch) {
         super(board, color);
         this.chessMatch = chessMatch;
     }
