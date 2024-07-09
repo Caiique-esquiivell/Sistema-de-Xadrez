@@ -6,6 +6,7 @@ import bordgame.Position;
 import chess.pices.King;
 import chess.pices.Rook;
 import chess.pices.Pawn;
+import  chess.pices.Bishop;
 
 import java.util.ArrayList;
 import java.util.List;
