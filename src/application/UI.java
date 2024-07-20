@@ -74,7 +74,7 @@ public class UI {
             }
             System.out.println();
         }
-        System.out.println("  a b c d e f g h");
+        System.out.println("  a    b    c    d     e   f    g     h");
     }
 
     public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves) {
@@ -85,7 +85,7 @@ public class UI {
             }
             System.out.println();
         }
-        System.out.println("  a b c d e f g h");
+        System.out.println("  a  b  c  d  e  f  g  h");
     }
 
     private static void printPiece(ChessPiece piece, boolean background) {
@@ -93,7 +93,8 @@ public class UI {
             System.out.print(ANSI_BLUE_BACKGROUND);
         }
         if (piece == null) {
-            System.out.print("-" + ANSI_RESET);
+            System.out.print(" _" + ANSI_RESET);
+            System.out.print(" ");
         }
         else {
             if (piece.getColor() == Color.WHITE) {
@@ -103,7 +104,7 @@ public class UI {
                 System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
             }
         }
-        System.out.print(" ");
+        System.out.print("  ");
     }
 
     private static void printCapturedPieces(List<ChessPiece> captured) {

@@ -4,6 +4,7 @@ import boardgame.Board;
 import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.*;
+import chess.pieces.pawn.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -322,13 +323,13 @@ public class ChessMatch {
         placeNewPiece('g', 1, new Knight(board, Color.WHITE));
         placeNewPiece('h', 1, new Rook(board, Color.WHITE));
         placeNewPiece('a', 2, new Pawn(board, Color.WHITE, this));
-        placeNewPiece('b', 2, new Pawn(board, Color.WHITE, this));
-        placeNewPiece('c', 2, new Pawn(board, Color.WHITE, this));
-        placeNewPiece('d', 2, new Pawn(board, Color.WHITE, this));
-        placeNewPiece('e', 2, new Pawn(board, Color.WHITE, this));
-        placeNewPiece('f', 2, new Pawn(board, Color.WHITE, this));
-        placeNewPiece('g', 2, new Pawn(board, Color.WHITE, this));
-        placeNewPiece('h', 2, new Pawn(board, Color.WHITE, this));
+        placeNewPiece('b', 2, new PawnTwo(board, Color.WHITE, this));
+        placeNewPiece('c', 2, new PawnThree(board, Color.WHITE, this));
+        placeNewPiece('d', 2, new PawnFour(board, Color.WHITE, this));
+        placeNewPiece('e', 2, new PawnFive(board, Color.WHITE, this));
+        placeNewPiece('f', 2, new PawnSix(board, Color.WHITE, this));
+        placeNewPiece('g', 2, new PawnSeven(board, Color.WHITE, this));
+        placeNewPiece('h', 2, new PawnEight(board, Color.WHITE, this));
 
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('b', 8, new Knight(board, Color.BLACK));
@@ -339,12 +340,12 @@ public class ChessMatch {
         placeNewPiece('g', 8, new Knight(board, Color.BLACK));
         placeNewPiece('h', 8, new Rook(board, Color.BLACK));
         placeNewPiece('a', 7, new Pawn(board, Color.BLACK, this));
-        placeNewPiece('b', 7, new Pawn(board, Color.BLACK, this));
-        placeNewPiece('c', 7, new Pawn(board, Color.BLACK, this));
-        placeNewPiece('d', 7, new Pawn(board, Color.BLACK, this));
-        placeNewPiece('e', 7, new Pawn(board, Color.BLACK, this));
-        placeNewPiece('f', 7, new Pawn(board, Color.BLACK, this));
-        placeNewPiece('g', 7, new Pawn(board, Color.BLACK, this));
-        placeNewPiece('h', 7, new Pawn(board, Color.BLACK, this));
+        placeNewPiece('b', 7, new PawnTwo(board, Color.BLACK, this));
+        placeNewPiece('c', 7, new PawnThree(board, Color.BLACK, this));
+        placeNewPiece('d', 7, new PawnFour(board, Color.BLACK, this));
+        placeNewPiece('e', 7, new PawnFive(board, Color.BLACK, this));
+        placeNewPiece('f', 7, new PawnSix(board, Color.BLACK, this));
+        placeNewPiece('g', 7, new PawnSeven(board, Color.BLACK, this));
+        placeNewPiece('h', 7, new PawnEight(board, Color.BLACK, this));
     }
 }

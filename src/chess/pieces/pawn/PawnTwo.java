@@ -1,4 +1,4 @@
-package chess.pieces;
+package chess.pieces.pawn;
 
 import boardgame.Board;
 import boardgame.Position;
@@ -6,11 +6,11 @@ import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.Color;
 
-public class Pawn extends ChessPiece {
+public class PawnTwo extends ChessPiece {
 
     private ChessMatch chessMatch;
 
-    public Pawn(Board board, Color color, ChessMatch chessMatch) {
+    public PawnTwo(Board board, Color color, ChessMatch chessMatch) {
         super(board, color);
         this.chessMatch = chessMatch;
     }
@@ -89,8 +89,7 @@ public class Pawn extends ChessPiece {
     @Override
     public String toString() {
         return " ♙" +
-                "";
+                " ";
     }
 
 }
-
